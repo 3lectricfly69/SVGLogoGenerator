@@ -15,7 +15,6 @@ const generateSVG = ({textInput, textColor, logoShape, logoColor}) => {
     
         </svg>
         `;
-
     }
     if (logoShape = 'square'){
         logo =
@@ -27,7 +26,6 @@ const generateSVG = ({textInput, textColor, logoShape, logoColor}) => {
     
         </svg>
         `;
-
     }
     if (logoShape = 'circle'){
         logo =
@@ -42,21 +40,6 @@ const generateSVG = ({textInput, textColor, logoShape, logoColor}) => {
     }
 return logo;
 }
-
-    // const generateSVG = ({textInput, textColor, logoColor}) => 
-
-        
-    //         `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-    
-    //             <polygon points="150, 18 244, 182 56, 182" fill="${logoColor}" />
-        
-    //             <text x="150" y="150" font-size="60" text-anchor="middle" fill="${textColor}">${textInput}</text>
-        
-    //         </svg>
-    //         `;
-    
-        
-       
 
 inquirer
     .prompt([
@@ -83,12 +66,6 @@ inquirer
         message: 'Give a three-character hexadecimal or color keyword to indicate what color your logo will be.',
     },
     ])
-
-    // .then((answers) => {
-    // // Use user feedback for... whatever!!
-    // writeFile('logo.svg', generateSVG(answers));
-    // console.log('Created logo ;)');
-    // })
 
     .then((answers) => writeFile('logo.svg', generateSVG(answers).toString()))
     .then(() => console.log('Created logo ;)'))
