@@ -1,18 +1,8 @@
 # SVGLogoGenerator
-With a given command-line application that accepts a user's input, prompts appear for a 3-character text input. These prompts include include inquires of text, text color, and text shape. These are then generated into a logo that is in an .svg file format. Description and directions may then be referred to in the given README file.
+With a given command-line application that accepts a user's input, prompts appear for a 3-character text input. These prompts include inquiries about text, text color, and text shape. These inquiry responses then generate a logo that is in a .svg file format, which can be opened and viewed in the browser. 
 
-more descriptive version to reword that which is ^: 
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for text
-THEN I can enter up to three characters
-WHEN I am prompted for the text color
-THEN I can enter a color keyword (OR a hexadecimal number)
-WHEN I am prompted for a shape
-THEN I am presented with a list of shapes to choose from: circle, triangle, and square
-WHEN I am prompted for the shape's color
-THEN I can enter a color keyword (OR a hexadecimal number)
-WHEN I have entered input for all the prompts
-THEN an SVG file is created named `logo.svg`
-AND the output text "Generated logo.svg" is printed in the command line
-WHEN I open the `logo.svg` file in a browser
-THEN I am shown a 300x200 pixel image that matches the criteria I entered
+ Directions to operate this command line application / generate output SVG:
+ -- Open the terminal located in the root directory >> run the command "node LogoGen.js" >> enter responses according to prompted questions that appear
+ -- right-click logo.svg file that is generated >> navigate to Live Server to view new SVG image output
+ 
+ [Untitled_ Nov 25 2023 11_33 PM.webm](https://github.com/3lectricfly69/SVGLogoGenerator/assets/98570029/b0ff4ed5-1dce-450b-9448-3911b936b3f7)
